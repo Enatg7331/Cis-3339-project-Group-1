@@ -1,0 +1,53 @@
+{
+  "name": "backend",
+  "version": "2.0.0",
+  "description": "Dataplatform backend API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "db:init": "node scripts/db-init.js",
+    "lint": "eslint app.js auth models routes scripts --ext .js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.7.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "prettier"
+    ],
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "es2022": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "semi": true,
+          "singleQuote": true,
+          "trailingComma": "none"
+        }
+      ],
+      "arrow-body-style": "off",
+      "prefer-arrow-callback": "off"
+    },
+    "plugins": [
+      "prettier"
+    ]
+  }
+}
