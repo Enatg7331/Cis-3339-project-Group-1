@@ -318,6 +318,10 @@
 </template>
 
 <script setup>
+
+// Migrated to the Composition API using script setup.
+// Replaced the Options API data and computed properties
+
 import { onMounted, reactive, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import useVuelidate from '@vuelidate/core';

@@ -83,6 +83,10 @@
 </template>
 
 <script setup>
+
+// Reworked the event page to use Composition API functions.
+// onmounted loads the event data when the page opens.
+
 import { computed, onMounted, ref } from 'vue';
 import { getEvents, searchEvents } from '../api/api';
 import DataTable from '../components/DataTable.vue';

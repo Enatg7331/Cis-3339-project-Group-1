@@ -83,6 +83,10 @@
 </template>
 
 <script setup>
+
+// Updated the service search page to use script setup
+// instead of the old Options API structure.
+
 import { computed, onMounted, ref } from 'vue';
 import { getServices, searchServices } from '../api/api';
 import DataTable from '../components/DataTable.vue';

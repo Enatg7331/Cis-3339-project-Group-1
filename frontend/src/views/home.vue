@@ -94,6 +94,10 @@
 </template>
 
 <script setup>
+
+// Changed the dashboard to use computed and onmounted
+// for handling its data and loading the charts.
+
 import { computed, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import AttendanceChart from '../components/barChart.vue';

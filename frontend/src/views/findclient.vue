@@ -90,6 +90,10 @@
 </template>
 
 <script setup>
+
+// Switched the client search over to script setup.
+// Client search values are now managed with refs.
+
 import { computed, onMounted, ref } from 'vue';
 import { getClients, searchClients } from '../api/api';
 import DataTable from '../components/DataTable.vue';
